@@ -1,0 +1,208 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ------------ */
+
+.nav {
+    position: fixed;
+    background-color: #838fd1;
+    margin-top: 10px;
+}
+
+nav > ul {
+    font-size: 0;
+}
+
+ul > li {
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* .container {
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+main {
+    padding-top: 100px;
+}
+
+.parent-1 {
+    font-size: 0;
+    background-color: #14f0a3;
+    min-height: 100px;
+}
+
+.parent-2 {
+    font-size: 0;
+    background-color: #1ddf74;
+    min-height: 100px;
+}
+
+.parent-3 {
+    font-size: 0;
+    background-color: #06e8ca;
+    min-height: 100px;
+}
+
+.parent-4 {
+    font-size: 0;
+    background-color: #0fd0a6;
+    min-height: 100px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.width-30 {
+    width: 33%;
+}
+
+.width-60 {
+    width: 66%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-49 {
+    width: 49%;
+}
+
+.font-size {
+    font-size: 20px;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
