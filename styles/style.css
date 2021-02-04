@@ -127,7 +127,7 @@ table {
 .nav {
     position: fixed;
     background-color: #838fd1;
-    margin-top: 10px;
+    margin: 10px 0px 0px 300px;
 }
 
 nav > ul {
@@ -140,35 +140,32 @@ ul > li {
     margin: 20px;
 }
 
-/* .container {
-    max-width: 1000px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-} */
+    text-align: center;
+}
 
 main {
     padding-top: 100px;
 }
 
 .parent-1 {
-    font-size: 0;
     background-color: #14f0a3;
     min-height: 100px;
 }
 
 .parent-2 {
-    font-size: 0;
     background-color: #1ddf74;
     min-height: 100px;
 }
 
 .parent-3 {
-    font-size: 0;
     background-color: #06e8ca;
     min-height: 100px;
 }
 
 .parent-4 {
-    font-size: 0;
     background-color: #0fd0a6;
     min-height: 100px;
 }
@@ -191,6 +188,10 @@ main {
 
 .width-49 {
     width: 49%;
+}
+
+.font-size-0 {
+    font-size: 0;
 }
 
 .font-size {
