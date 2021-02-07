@@ -125,9 +125,8 @@ table {
 /* ------------ */
 
 .nav {
-    position: fixed;
     background-color: #838fd1;
-    margin: 10px 0px 0px 300px;
+    text-align: center;
 }
 
 nav > ul {
@@ -147,7 +146,7 @@ ul > li {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .parent-1 {
@@ -186,8 +185,8 @@ main {
     width: 50%;
 }
 
-.width-49 {
-    width: 49%;
+.width-100 {
+    width: 100%;
 }
 
 .font-size-0 {
@@ -206,4 +205,86 @@ main {
     content: '';
     display: block;
     clear: both;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+footer {
+    margin: 30px 0px;
+}
+
+footer a {
+    transition: background 1s ease 0.5s;
+}
+
+footer > ul {
+    font-size: 0;
+}
+
+footer > ul > li {
+    display: inline-block;
+    margin: 0;
+}
+
+footer a {
+    display: block;
+    width: 127px;
+    height: 127px;
+    background-image: url(../img/sprites3.png);
+}
+
+footer li > a {
+    background-position: 0 0px;
+}
+footer li + li > a {
+    background-position: -127px 0px;
+}
+footer li + li + li > a {
+    background-position: -254px -0px;
+}
+footer li + li + li + li > a {
+    background-position: 0px -255px;
+}
+footer li + li + li + li + li > a {
+    background-position: -127px -255px;
+}
+footer li + li + li + li + li + li > a {
+    background-position: -254px -255px;
+}
+
+footer li > a:hover {
+    background-position: 0 -127.5px;
+}
+footer li + li > a:hover {
+    background-position: -127px -127.5px;
+}
+
+footer li + li + li > a:hover {
+    background-position: -254px -127.5px;
+}
+
+footer li + li + li + li > a:hover {
+    background-position: 0px -382.5px;
+}
+
+footer li + li + li + li + li > a:hover {
+    background-position: -127px -382.5px;
+}
+
+footer li + li + li + li + li + li > a:hover {
+    background-position: -254px -382.5px;
 }

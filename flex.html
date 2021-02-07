@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inline-Block</title>
+        <title>Flex-Block</title>
         <link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
@@ -22,40 +23,39 @@
                 </ul>
             </nav>
         </header>
-        <main class="container">
-            <div class="parent-1 font-size-0">
-                <div class="inline-block width-30 font-size middle">
+        <main class="container font-size">
+            <div class="parent-1 flex align-items">
+                <div class="width-30">
                     1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Reprehenderit, est?
                 </div>
-                <div class="inline-block width-30 font-size middle">
+                <div class="width-30">
                     2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolor, cum?
                 </div>
-                <div class="inline-block width-30 font-size">
+                <div class="width-30">
                     3. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Deserunt, a.
                 </div>
             </div>
-
-            <div class="parent-2 font-size-0">
+            <div class="parent-2 flex align-items">
                 <!-- subparent-4-5 -->
-                <div class="inline-block width-60">
-                    <div class="font-size">
+                <div class="width-60">
+                    <div>
                         4. Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Minus alias quibusdam sit necessitatibus molestias
                         officia non modi rerum suscipit? Aut.officia non modi
                         rerum suscipit? Aumolestias officia non modi rerum
                         suscipit? Aut.officia non modi rerum suscipit? Au
                     </div>
-                    <div class="font-size">
+                    <div>
                         5. Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Laboriosam vel similique officia illum consequatur
                         repellat recusandae corporis id, facere quibusdam.
                     </div>
                 </div>
                 <!-- subparent-6-7-8 -->
-                <div class="inline-block width-30 font-size">
+                <div class="width-30">
                     <div>
                         6. Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Ratione, delectus?
@@ -70,8 +70,8 @@
                     </div>
                 </div>
             </div>
-            <div class="parent-3 font-size-0">
-                <div class="inline-block width-30 font-size">
+            <div class="parent-3 flex align-items">
+                <div class="width-30">
                     9. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Id amet quas corrupti eaque nisi natus suscipit veritatis
                     est nihil sed, accusamus nobis itaque magni deserunt
@@ -79,56 +79,56 @@
                     dolor sit amet
                 </div>
                 <!-- subparent-10-11-12-13 -->
-                <div class="width-60 inline-block font-size-0">
-                    <div class="font-size">
+                <div class="width-60 flex wrapper">
+                    <div class="">
                         10. Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Architecto distinctio nulla blanditiis eligendi
                         hic placeat.
                     </div>
-                    <div class="inline-block width-50 font-size">
+                    <div class="width-50">
                         11. Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Possimus sapiente ducimus minima, voluptas eos
                         nesciunt placeat quae! Omnis, earum rerum.
                     </div>
-                    <!-- subparent-12-13 -->
-                    <div class="inline-block width-50">
-                        <div class="font-size">
+                    <!-- subparent 12-13 -->
+                    <div class="width-50">
+                        <div class="">
                             12. Lorem ipsum, dolor sit amet consectetur
                             adipisicing elit. Labore, tenetur!
                         </div>
-                        <div class="font-size">
+                        <div class="">
                             13 Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Illum, labore..
+                            adipisicing elit. Illum, labre..
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="parent-4 font-size-0">
+            <div class="parent-4 flex">
                 <!-- subparent-14-15-16-17-18 -->
-                <div class="inline-block width-60 font-size-0">
-                    <div class="font-size">
+                <div class="width-60 flex wrapper">
+                    <div>
                         14. Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Repudiandae nesciunt animi molestiae deserunt!
                         Saepe quidem, fugiat voluptas laborum veritatis tempora?
                     </div>
                     <!-- subparent-15-16-17 -->
-                    <div class="inline-block width-50 font-size-0">
-                        <div class="font-size">
+                    <div class="width-50 flex wrapper">
+                        <div>
                             15. Lorem ipsum dolor sit amet consectetur,
                             adipisicing elit. Dolor eaque odio ipsum non nobis
                             eligendi expedita inventore excepturi. Corporis,
                             cum!
                         </div>
-                        <div class="inline-block width-50 font-size">
+                        <div class="width-50">
                             16. Lorem ipsum dolor sit amet consectetur
                             adipisicing
                         </div>
-                        <div class="inline-block width-50 font-size">
+                        <div class="width-50">
                             17. Lorem ipsum dolor sit amet consectetur
                             adipisicing elit.
                         </div>
                     </div>
-                    <div class="inline-block width-50 font-size">
+                    <div class="width-50">
                         18. Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Ab repudiandae laudantium aliquam neque autem
                         optio at eos amet voluptate fuga eligendi similique eum,
@@ -138,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="inline-block width-30 font-size">
+                <div class="width-30">
                     19. Lorem, ipsum dolor sit amet consectetur adipisicing
                     elit. Ab amet voluptatibus earum unde eligendi impedit,
                     accusamus necessitatibus odio culpa vel, fugit repellendus
@@ -149,17 +149,5 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <ul class="ul-footer">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </footer>
     </body>
-
-    <script></script>
 </html>
