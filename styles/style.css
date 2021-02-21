@@ -139,6 +139,77 @@ ul > li {
     margin: 20px;
 }
 
+.submenu {
+    background: white;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    width: 150px;
+    transition: 0.6s ease-in-out;
+}
+
+.about-us {
+    position: relative;
+}
+.about-us:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.homework {
+    position: relative;
+}
+
+.submenu2 {
+    background: white;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 200px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    width: 200px;
+    padding: 25 0 0 0;
+    transition: 2s cubic-bezier(0, 1.49, 1, 1.3);
+}
+
+.homework:hover .submenu2 {
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+}
+
+figure {
+    position: relative;
+}
+
+.figure:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 5px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+}
+
+.figure::after {
+    content: ' ';
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    background: gray;
+    left: 25px;
+    bottom: 19px;
+    transform: rotate(40deg);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -228,7 +299,7 @@ footer {
 }
 
 footer a {
-    transition: background 1s ease 0.5s;
+    transition: 1s ease 0.5s;
 }
 
 footer > ul {
@@ -287,4 +358,38 @@ footer li + li + li + li + li > a:hover {
 
 footer li + li + li + li + li + li > a:hover {
     background-position: -254px -382.5px;
+}
+
+/* gradient */
+.wrapper-gradient {
+    margin: 30px auto;
+    max-width: 1200px;
+    background: #838fd130;
+}
+
+.wrapper-gradient > div {
+    width: 300px;
+    margin: 20px auto;
+    min-height: 300px;
+}
+
+.gradient-1 {
+    background: repeating-linear-gradient(
+        45deg,
+        #06e8ca 5px,
+        #0fd0a6 20px,
+        #14f0a3 30px,
+        #56edde 40px,
+        #2bd9df 50px,
+        #06e8ca 55px
+    );
+}
+
+.gradient-2 {
+    background: radial-gradient(
+        circle farthest-corner at 100px 200px,
+        #e4c4dc,
+        #caa9e4,
+        #a3a8e9
+    );
 }
