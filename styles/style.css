@@ -123,7 +123,7 @@ table {
     border-spacing: 0;
 }
 /* ------------ */
-
+/* header */
 .nav {
     background-color: #838fd1;
     text-align: center;
@@ -143,12 +143,14 @@ ul > li {
     background: white;
     border: 2px solid #003559;
     position: absolute;
+    top: 30px;
     left: 0;
     opacity: 0;
     visibility: hidden;
     z-index: 5;
     width: 150px;
     transition: 0.6s ease-in-out;
+    display: inline-block;
 }
 
 .about-us {
@@ -167,7 +169,9 @@ ul > li {
     background: white;
     border: 2px solid #003559;
     position: absolute;
+    display: inline-block;
     left: 200px;
+    top: 30px;
     opacity: 0;
     visibility: hidden;
     z-index: 5;
@@ -182,11 +186,11 @@ ul > li {
     visibility: visible;
 }
 
-figure {
+figure1 {
     position: relative;
 }
 
-.figure:before {
+.figure1:before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -198,7 +202,7 @@ figure {
     bottom: 20px;
 }
 
-.figure::after {
+.figure1::after {
     content: ' ';
     display: inline-block;
     width: 20px;
@@ -209,6 +213,40 @@ figure {
     bottom: 19px;
     transform: rotate(40deg);
 }
+
+.figure2 {
+    position: relative;
+}
+
+.figure2:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-left: 5px solid gray;
+    border-bottom: 5px solid transparent;
+    background-color: transparent;
+    transform: rotate(5deg);
+    top: 0;
+    left: -40px;
+}
+.figure2::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    transform: rotate(180deg);
+    border-top: 10px solid gray;
+    border-left: 10px solid gray;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -45px;
+    bottom: -10px;
+}
+
+/* header */
+/* main */
 
 .container {
     max-width: 1200px;
@@ -278,6 +316,8 @@ main {
     clear: both;
 }
 
+/* flex */
+
 .flex {
     display: flex;
 }
@@ -293,6 +333,9 @@ main {
 .middle {
     vertical-align: middle;
 }
+/* flex */
+/* main */
+/* footer */
 
 footer {
     margin: 30px 0px;
@@ -359,6 +402,7 @@ footer li + li + li + li + li > a:hover {
 footer li + li + li + li + li + li > a:hover {
     background-position: -254px -382.5px;
 }
+/* footer */
 
 /* gradient */
 .wrapper-gradient {
@@ -392,4 +436,70 @@ footer li + li + li + li + li + li > a:hover {
         #caa9e4,
         #a3a8e9
     );
+}
+/* gradient */
+
+/* figures */
+
+.container-figures {
+    display: flex;
+    max-width: 100%;
+    margin: 30px;
+    background-color: #e4c4dc30;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container-figures > div {
+    margin: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0fd0a6;
+}
+
+.oval {
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0fd0a6;
+}
+
+.tringle {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid #0fd0a6;
+}
+
+.tringle2 {
+    border-top: 40px solid #0fd0a6;
+    border-left: 40px solid #0fd0a6;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+}
+
+.arrow {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-left: 10px solid #0fd0a6;
+    border-bottom: 10px solid transparent;
+    background-color: transparent;
+    transform: rotate(5deg);
+    position: relative;
+}
+.arrow::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    transform: rotate(180deg);
+    border-top: 20px solid #0fd0a6;
+    border-left: 20px solid #0fd0a6;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    left: -10px;
+    bottom: -7px;
 }
