@@ -148,9 +148,10 @@ ul > li {
     opacity: 0;
     visibility: hidden;
     z-index: 5;
-    width: 150px;
+    width: 200px;
     transition: 0.6s ease-in-out;
     display: inline-block;
+    padding: 0 0 0 20px;
 }
 
 .about-us {
@@ -178,6 +179,7 @@ ul > li {
     width: 200px;
     padding: 25 0 0 0;
     transition: 2s cubic-bezier(0, 1.49, 1, 1.3);
+    padding: 0 0 0 20px;
 }
 
 .homework:hover .submenu2 {
@@ -186,7 +188,7 @@ ul > li {
     visibility: visible;
 }
 
-figure1 {
+.figure1 {
     position: relative;
 }
 
@@ -198,8 +200,8 @@ figure1 {
     border: 5px solid gray;
     border-radius: 50%;
     position: absolute;
-    left: 5px;
-    bottom: 20px;
+    left: -50px;
+    bottom: 0px;
 }
 
 .figure1::after {
@@ -209,9 +211,9 @@ figure1 {
     height: 5px;
     position: absolute;
     background: gray;
-    left: 25px;
-    bottom: 19px;
-    transform: rotate(40deg);
+    left: -32px;
+    bottom: -4px;
+    transform: rotate(43deg);
 }
 
 .figure2 {
@@ -243,6 +245,17 @@ figure1 {
     border-bottom: 10px solid transparent;
     left: -45px;
     bottom: -10px;
+}
+
+.figure3::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 30px solid gray;
+    border-right: 30px solid transparent;
+    top: 3px;
+    left: 2px;
 }
 
 /* header */
@@ -502,4 +515,10 @@ footer li + li + li + li + li + li > a:hover {
     border-bottom: 20px solid transparent;
     left: -10px;
     bottom: -7px;
+}
+
+.packman {
+    border-radius: 50%;
+    border: 50px solid #0fd0a6;
+    border-right: 50px solid transparent;
 }
